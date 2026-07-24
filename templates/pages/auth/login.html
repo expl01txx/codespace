@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}CodeSpace{% endblock %}
+
+{% block head %}
+<link rel="stylesheet" href="/css/posts.css">
+{% endblock %}
+
+{% block content %}
+<div>
+    <h1 class="text-gray-100">Login page</h1>
+
+    <form action="/auth/login" method="post">
+        <input type="text" name="username" id="username" required />
+        <input type="password" name="password" id="password" required />
+        <input type="submit" value="Login" />
+    </form>
+</div>
+{% endblock %}
+
+{% block scripts %}{% endblock %}

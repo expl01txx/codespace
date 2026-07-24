@@ -1,0 +1,16 @@
+[package]
+name = "codespace"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+askama = "0.16.0"
+axum = "0.8.9"
+sea-orm = { version = "2.0.0", features = ["runtime-tokio-native-tls", "sqlx-sqlite", "macros"] }
+serde = { version = "1.0.229", features = ["derive"] }
+tokio = { version = "1.53.1", features = ["full"] }
+tracing-subscriber = "0.3.23"
+
+migration = { path = "migration" }
+argon2 = "0.5.3"
+validator = { version = "0.20.0", features = ["derive"] }
